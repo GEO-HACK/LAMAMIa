@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Link from 'next/link';
 
@@ -39,16 +41,18 @@ const links = [
 
 const Navbar = () => {
   return (
-    <div className='flex items-between justify-between'>
+    <div className='flex items-between justify-between   '>
         <Link 
         href='/'
-        className='ml-4 text-xl font-bold text-green-700'
+        className=' text-xl font-bold text-green-400'
         
         >Lamamia</Link>
-        <div className='flex gap-4 mr-2 font-semibold text-md'>
+        <div className='flex gap-4 mr-2 font-semibold text-md text-slate-200 align-middle '>
           {links.map(link=>(
-            <Link href={link.url} key={link.id}>{link.title}</Link>
+            <Link className='hover:text-green-600' href={link.url} key={link.id}>{link.title}</Link>
           ))}
+          <button onClick={()=> console.log("logged out")}
+            className='bg-green-600 rounded-lg text-slate-200 border border-green-600 text-sm px-3 py-1 hover:bg-transparent hover:text-green-600 cursor-pointer'> Log Out</button>
         </div>
     </div>
   )
