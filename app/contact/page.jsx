@@ -22,15 +22,15 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Name"
-              className="p-8 bg-transparent border border-gray-300  outline-none text-sm"
+              className="p-5 bg-transparent border border-gray-300  outline-none text-sm"
             />
             <input
               type="text"
               placeholder="Email"
-              className="p-8 bg-transparent border border-gray-300  outline-none text-sm"
+              className="p-5 bg-transparent border border-gray-300  outline-none text-sm"
             />
             <textarea
-              className="p-8 bg-transparent border border-gray-300  outline-none text-sm"
+              className="p-5 bg-transparent border border-gray-300  outline-none text-sm"
               placeholder="Message"
               rows="10"
               cols="30"
