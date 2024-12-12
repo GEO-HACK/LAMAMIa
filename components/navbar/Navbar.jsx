@@ -41,7 +41,7 @@ const links = [
 
 const Navbar = () => {
   return (
-    <div className='flex items-between justify-between   '>
+    <div className='flex items-between justify-between  mt-4  '>
         <Link 
         href='/'
         className=' text-xl font-bold text-green-400'

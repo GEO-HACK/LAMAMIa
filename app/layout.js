@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       
-      <body className="bg-black max-w-[1366px] min-h-screen mx-auto p-[60px] flex flex-col justify-between text-slate-200">
+      <body className="bg-black max-w-[1366px] min-h-screen mx-auto px-[60px] flex flex-col justify-between text-slate-200">
         <Navbar/>
         {children}
         <Footer/>

@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer utilities {
+    .gradient-text {
+      background: linear-gradient(to bottom, #194c33, #bbb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .image--scale{
+      filter:grayscale(100)
+    }
+  }
