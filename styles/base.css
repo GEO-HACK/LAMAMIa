@@ -2,14 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
     .gradient-text {
       background: linear-gradient(to bottom, #194c33, #bbb);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    .image--scale{
-      filter:grayscale(100)
+
+    .image--scale {
+      filter: grayscale(100);
     }
-  }
+    
+    /* Global styles for light and dark modes */
+    html {
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* For light mode */
+    html.light {
+      background-color: #ffffff; /* Light background color */
+      color: #333333; /* Light text color */
+    }
+    
+    /* For dark mode */
+    html.dark {
+      background-color: #000000; /* Dark background color */
+      color: #ffffff; /* Dark text color */
+    }
+
+    /* Body takes the background and text colors from html element */
+    body {
+      background-color: inherit;
+      color: inherit;
+    }
+}

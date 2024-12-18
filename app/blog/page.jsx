@@ -4,9 +4,8 @@ import Link from "next/link";
 
 const Blog = () => {
   return (
-    <div className="flex flex-col gap-5 w-[80%] items-center mt-5">
-      <h1 className="text-6xl font-bold">Blogs</h1>
-      <Link className="mt-2" href="/test">
+    <div className="flex flex-col gap-5 w-[80%] items-center ">
+      <Link className="mt-2" href="/blog/test">
       <div className="flex   gap-4 m-auto">
         
           <div className="">
@@ -28,7 +27,7 @@ const Blog = () => {
           </div>
       </div>
       </Link>
-      <Link className="mt-2" href="/test">
+      <Link className="mt-2" href="/blog/test">
       <div className="flex   gap-4 m-auto">
         
           <div className="">
@@ -50,7 +49,7 @@ const Blog = () => {
           </div>
       </div>
       </Link>
-      <Link className="mt-2" href="/test">
+      <Link className="mt-2" href="/blog/test">
       <div className="flex   gap-4 m-auto">
         
           <div className="">
@@ -72,7 +71,7 @@ const Blog = () => {
           </div>
       </div>
       </Link>
-      <Link className="mt-2" href="/test">
+      <Link className="mt-2" href="/blog/test">
       <div className="flex   gap-4 m-auto">
         
           <div className="">
@@ -99,6 +98,6 @@ const Blog = () => {
 
     </div>
   );
-};
+}
 
 export default Blog;

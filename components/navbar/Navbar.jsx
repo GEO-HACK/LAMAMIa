@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Link from 'next/link';
+import DarkModeToggle from "../DarkModeToggle/DarkModeToggle"
 
 
 
@@ -48,6 +49,7 @@ const Navbar = () => {
         
         >Lamamia</Link>
         <div className='flex gap-4 mr-2 font-semibold text-md text-slate-200 align-middle '>
+          <DarkModeToggle/>
           {links.map(link=>(
             <Link className='hover:text-green-600' href={link.url} key={link.id}>{link.title}</Link>
           ))}
